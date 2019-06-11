@@ -52,7 +52,6 @@
         <rollingPolicy  class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 
             <fileNamePattern>${filepath}\error.%d.log</fileNamePattern>
-
         </rollingPolicy>
 
     </appender>
@@ -64,6 +63,7 @@
         <appender-ref ref="fileErrorLog"/>
 
     </root>
+
 
 </configuration>
 
