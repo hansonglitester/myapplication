@@ -25,9 +25,9 @@ public class UserController {
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ApiOperation(value = "login接口",httpMethod = "POST")
-    public String login(HttpServletResponse response,@RequestBody User user){
+    public String login(HttpServletResponse response,@RequestParam String name,@RequestParam String pwd){
 
-        List<User> users=userDao.findByNameAndPwd(user.getName(),user.getPwd());
+        List<User> users=userDao.findByNameAndPwd(name,pwd);
         Map<String,Object> result=new HashMap<String,Object>();
         if(users.size()==1){
             Cookie cookie = new Cookie("login","true");
@@ -42,7 +42,7 @@ public class UserController {
 
 
 
-    @RequestMapping(value = "addUser",method = RequestMethod.POST)
+    @RequestMapping(value = "saveUser",method = RequestMethod.POST)
     @ApiOperation(value = "添加/修改用户接口",notes="传入需要添加/修改的用户信息",httpMethod = "POST")
     public String  addUser(HttpServletRequest request,@RequestBody User user){
         Boolean x = verifyCookies(request);
