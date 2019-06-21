@@ -1,6 +1,8 @@
 package com.hsl.cn.controller;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.hsl.cn.config.HibernateProxyTypeAdapter;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import com.hsl.cn.dao.UserDao;
 import com.hsl.cn.pojo.User;
 
+import javax.jws.soap.SOAPBinding;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,7 +22,10 @@ import java.util.*;
 @Api(value = "用户管理",description = "实现用户的增删该查的操作")
 public class UserController {
     private Logger log= LoggerFactory.getLogger(UserController.class);
-    private Gson gson=new Gson();
+    //private Gson gson=new Gson();
+
+   Gson gson=new GsonBuilder().registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY).create();
+
     @Autowired
     UserDao userDao;
 
@@ -30,11 +36,19 @@ public class UserController {
         List<User> users=userDao.findByNameAndPwd(name,pwd);
         Map<String,Object> result=new HashMap<String,Object>();
         if(users.size()==1){
-            Cookie cookie = new Cookie("login","true");
-            response.addCookie(cookie);
-            result.put("rsp_code","0000");
-            result.put("rsp_msg","成功");
-            result.put("user",users.get(0));
+            //判断用户的状态
+            User user =users.get(0);
+            if (user.getStatus()==0){
+                Cookie cookie = new Cookie("login","true");
+                response.addCookie(cookie);
+                result.put("rsp_code","0000");
+                result.put("rsp_msg","成功");
+                result.put("user",users.get(0));
+            }else{
+                result.put("rsp_code","1002");
+                result.put("rsp_msg","用户账号状态异常，禁止登陆");
+            }
+
         }else {
             result.put("rsp_code","1001");
             result.put("rsp_msg","用户名或密码不对");
@@ -78,6 +92,7 @@ public class UserController {
 
         if(flag){
             User user =userDao.getOne(id);
+            System.out.println("uuuuuuuuuuuuuuuuuuu"+user.toString());
             result.put("rsp_code","0000");
             result.put("rsp_msg","成功");
             result.put("data",user);
@@ -89,7 +104,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "getUserListByName",method = RequestMethod.GET)
+    @RequestMapping(value = "getUserListByName",method = RequestMethod.POST)
     @ApiOperation(value = "查询用户",notes="通过用户的name来查询用户",httpMethod = "GET")
     public String getUserListByName(HttpServletRequest request, @RequestBody User user){
 
@@ -102,6 +117,9 @@ public class UserController {
             result.put("rsp_code","0000");
             result.put("rsp_msg","成功");
             result.put("data",users);
+        }else{
+            result.put("rsp_code","1000");
+            result.put("rsp_msg","用户未登陆");
         }
         return gson.toJson(result);
     }
