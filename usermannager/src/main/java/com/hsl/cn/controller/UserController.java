@@ -24,18 +24,18 @@ public class UserController {
     private Logger log= LoggerFactory.getLogger(UserController.class);
     //private Gson gson=new Gson();
 
-   Gson gson=new GsonBuilder().registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY).create();
+    Gson gson=new GsonBuilder().registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY).create();
 
     @Autowired
     UserDao userDao;
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ApiOperation(value = "login接口",httpMethod = "POST")
-    public String login(HttpServletResponse response,@RequestParam String name,@RequestParam String pwd){
+    public String login(HttpServletResponse response,@RequestParam String mobile,@RequestParam String pwd){
 
-        List<User> users=userDao.findByNameAndPwd(name,pwd);
+        List<User> users=userDao.findByMobileAndPwd(mobile,pwd);
         Map<String,Object> result=new HashMap<String,Object>();
-        if(users.size()==1){
+        if(users.size()>0){
             //判断用户的状态
             User user =users.get(0);
             if (user.getStatus()==0){
@@ -46,14 +46,16 @@ public class UserController {
                 result.put("user",users.get(0));
             }else{
                 result.put("rsp_code","1002");
-                result.put("rsp_msg","用户账号状态异常，禁止登陆");
+                result.put("rsp_msg","用户账号状态异常,禁止登陆");
             }
 
         }else {
             result.put("rsp_code","1001");
-            result.put("rsp_msg","用户名或密码不对");
+            result.put("rsp_msg","用户账号或密码不对");
         }
-        return gson.toJson(result);
+        String result1=gson.toJson(result);
+        log.info(result1);
+        return result1;
     }
 
 
@@ -62,22 +64,34 @@ public class UserController {
     @ApiOperation(value = "添加/修改用户接口",notes="传入需要添加/修改的用户信息",httpMethod = "POST")
     public String  addUser(HttpServletRequest request,@RequestBody User user){
         Boolean flag = verifyCookies(request);
-
         Map<String,Object> result=new HashMap<String,Object>();
-
-        if(flag){
-            try {
-                userDao.save(user);
-                result.put("rsp_code","0000");
-                result.put("rsp_msg","成功");
-            }catch (Exception e){
-                result.put("rsp_code","9999");
-                result.put("msg","数据异常，注意检查参数");
+        try {
+            //判断是否登录
+            if(flag) {
+                //判断注册用户的手机号是否已经注册过
+                List <User> users = userDao.findByMobile(user.getMobile());
+                if (users.size() > 0) {
+                    userDao.save(user);
+                    result.put("rsp_code", "1003");
+                    result.put("rsp_msg", "用户已存在");
+                }else {
+                    userDao.save(user);
+                    result.put("rsp_code", "0000");
+                    result.put("rsp_msg", "成功");
+                    result.put("data",user);
+                }
+            }else{
+                result.put("rsp_code","1000");
+                result.put("rsp_msg","用户未登陆");
             }
-        }else{
-            result.put("rsp_code","1000");
-            result.put("rsp_msg","用户未登陆");
+
+
+
+        }catch (Exception e){
+            result.put("rsp_code","9999");
+            result.put("msg","数据异常，注意检查参数");
         }
+
         return  gson.toJson(result);
     }
 
@@ -91,8 +105,8 @@ public class UserController {
         Map<String,Object> result=new HashMap <>();
 
         if(flag){
+
             User user =userDao.getOne(id);
-            System.out.println("uuuuuuuuuuuuuuuuuuu"+user.toString());
             result.put("rsp_code","0000");
             result.put("rsp_msg","成功");
             result.put("data",user);
@@ -104,7 +118,7 @@ public class UserController {
     }
 
 
-    @RequestMapping(value = "getUserListByName",method = RequestMethod.POST)
+    @RequestMapping(value = "getUserListByMobile",method = RequestMethod.POST)
     @ApiOperation(value = "查询用户",notes="通过用户的name来查询用户",httpMethod = "GET")
     public String getUserListByName(HttpServletRequest request, @RequestBody User user){
 
@@ -113,7 +127,7 @@ public class UserController {
 
         if(flag){
             List <User> users =new ArrayList <>();
-            users=userDao.findByName(user.getName());
+            users=userDao.findByMobile(user.getMobile());
             result.put("rsp_code","0000");
             result.put("rsp_msg","成功");
             result.put("data",users);

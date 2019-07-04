@@ -13,7 +13,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String name;
+    private String mobile;
     private String pwd;
     private Integer age;
     private Integer sex;
