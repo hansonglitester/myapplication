@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.hsl.cn.dao.UserDao;
 import com.hsl.cn.pojo.User;
-
-import javax.jws.soap.SOAPBinding;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,7 +20,6 @@ import java.util.*;
 @Api(value = "用户管理",description = "实现用户的增删该查的操作")
 public class UserController {
     private Logger log= LoggerFactory.getLogger(UserController.class);
-    //private Gson gson=new Gson();
 
     Gson gson=new GsonBuilder().registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY).create();
 
@@ -85,8 +82,6 @@ public class UserController {
                 result.put("rsp_msg","用户未登陆");
             }
 
-
-
         }catch (Exception e){
             result.put("rsp_code","9999");
             result.put("msg","数据异常，注意检查参数");
@@ -127,7 +122,7 @@ public class UserController {
 
         if(flag){
             List <User> users =new ArrayList <>();
-            users=userDao.findByMobile(user.getMobile());
+            users=userDao.findByMobileAndStatus(user.getMobile(),0);
             result.put("rsp_code","0000");
             result.put("rsp_msg","成功");
             result.put("data",users);
@@ -141,6 +136,7 @@ public class UserController {
 
     private Boolean verifyCookies(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
+
         if(Objects.isNull(cookies)){
             log.info("cookies为空");
             return  false;
