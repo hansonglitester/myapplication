@@ -1,3 +1,5 @@
 log/*
 tomcat/*
 usermannager/target/*
+week/target/*
+mock/target/*

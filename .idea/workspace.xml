@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="553764a2-a603-455c-a20a-02033d8ae648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/week/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/jmeter.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/reportgenerator.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/saveservice.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/system.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/upgrade.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/user.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/usermanager.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/jmeter/yly3.0.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/res/collapse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/res/expand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/res/jmeter-results-detail-report_21.xsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/res/jmeter-results-report_21.xsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter_maven_jenkins/src/test/res/jmeter.results.shanhe.me.xsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usermannager/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/usermannager/src/main/resources/application-qa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapplication.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usermannager/usermannager.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/usermannager/target/" />
     <ignored path="$PROJECT_DIR$/jmeter_maven_jenkins/target/" />
+    <ignored path="D:/jemeter-讲/auto-master/target/" />
+    <ignored path="D:/jemeter-讲/auto-master/javaauto/target/" />
+    <ignored path="E:/li_haodong-pre-master/pre/target/" />
+    <ignored path="$PROJECT_DIR$/week/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +48,7 @@
     <session id="-1249597236">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.153" value="1" />
@@ -74,17 +66,17 @@
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.79" value="1" />
-          <entry key="project.open.time.86" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.open.time.86" value="2" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="18" />
-          <entry key="JAVA" value="26" />
-          <entry key="Properties" value="11" />
-          <entry key="XML" value="12" />
+          <entry key="JAVA" value="30" />
+          <entry key="Properties" value="13" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -99,22 +91,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/Application.java">
+        <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/config/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="44" column="41" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -122,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="68">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -138,19 +118,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/logback-spring.xml">
+        <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/pojo/User.java">
+        <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/config/HibernateProxyTypeAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -158,10 +138,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+            <state relative-caret-position="119">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/jemeter-讲/auto-master/javaauto/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -174,21 +159,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-qa.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="119">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-qa.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -257,9 +238,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="15" />
-    <option name="y" value="123" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-78" />
+    <option name="y" value="49" />
     <option name="width" value="1377" />
     <option name="height" value="626" />
   </component>
@@ -269,9 +250,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="myapplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto-master" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="myapplication" type="b2602c69:ProjectViewProjectNode" />
               <item name="myapplication" type="462c0819:PsiDirectoryNode" />
@@ -281,7 +267,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,8 +274,8 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563963827313" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565337892948" />
+    <property name="last_opened_file_path" value="E:/li_haodong-pre-master/pre/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -386,12 +371,14 @@
       <workItem from="1563344361116" duration="568000" />
       <workItem from="1563933010106" duration="1534000" />
       <workItem from="1563935420999" duration="3915000" />
-      <workItem from="1564107322476" duration="597000" />
+      <workItem from="1564107322476" duration="1726000" />
+      <workItem from="1565156296491" duration="679000" />
+      <workItem from="1565329832027" duration="675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125844000" />
+    <option name="totallyTimeSpent" value="128327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,14 +390,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-78" y="49" width="1377" height="626" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.498366" visible="true" weight="0.27609682" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.498366" visible="true" weight="0.21716021" />
       <window_info id="Structure" order="6" sideWeight="0.501634" side_tool="true" weight="0.32223904" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.43948564" weight="0.36988544" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -429,7 +416,7 @@
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Database" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.025718609" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.22475323" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -521,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/config/HibernateProxyTypeAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5-sources.jar!/com/google/gson/Gson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10829">
@@ -557,34 +537,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-prod.properties" />
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://D:/jemeter-讲/auto-master/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -600,12 +555,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-dev.properties">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        <state relative-caret-position="323">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/config/HibernateProxyTypeAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/jemeter-讲/auto-master/javaauto/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/usermannager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -614,29 +624,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usermannager/src/main/resources/application-qa.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usermannager/src/main/java/com/hsl/cn/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/week/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
